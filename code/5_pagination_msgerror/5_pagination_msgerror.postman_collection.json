@@ -1,0 +1,310 @@
+{
+	"variables": [],
+	"info": {
+		"name": "hx labs advanced",
+		"_postman_id": "23577543-e8f9-e0ea-33ec-a8591a6d0fb3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET a movie",
+			"request": {
+				"url": "http://localhost:11506/api/movies/cde27ce7-d2c5-460c-8a25-10e31b988c4d",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET all movies",
+			"request": {
+				"url": "http://localhost:11506/api/movies/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST new movie",
+			"request": {
+				"url": "http://localhost:11506/api/movies/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"title\": \"Close Encounters of the Third Kind\",\r\n\t\"directorName\": \"Steven\",\r\n\t\"directorLastName\": \"Spielberg\",\r\n\t\"publish\": \"1977-11-15T00:00:00\",\r\n\t\"summary\": \"After an encounter with U.F.O.s, a line worker feels undeniably drawn to an isolated area in the wilderness where something spectacular is about to happen.\",\r\n    \"genre\": \"Drama, Sci-Fi\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE a movie",
+			"request": {
+				"url": "http://localhost:11506/api/movies/16dc2601-6e88-4098-822c-9eb5270da81e",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET all actor in movie",
+			"request": {
+				"url": "http://localhost:11506/api/movies/cde27ce7-d2c5-460c-8a25-10e31b988c4d/actors",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET a actor in movie",
+			"request": {
+				"url": "http://localhost:11506/api/movies/79a26b88-046a-4b80-a94b-38cb5330a280/actors/124a6d94-5006-4e09-8582-0e07cdc5deaf",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST new actor in movie",
+			"request": {
+				"url": "http://localhost:11506/api/movies/79a26b88-046a-4b80-a94b-38cb5330a280/actors",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Juanin\",\r\n\t\"LastName\": \"Clay\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE a actor in movie",
+			"request": {
+				"url": "http://localhost:11506/api/movies/cde27ce7-d2c5-460c-8a25-10e31b988c4d/actors/c0c4bba9-feae-4b2f-8956-01c48c13a3fd",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST new movie ERROR",
+			"request": {
+				"url": "http://localhost:11506/api/movies/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"directorName\": \"Steven\",\r\n\t\"directorLastName\": \"Spielberg\",\r\n\t\"publish\": \"1977-11-15T00:00:00\",\r\n\t\"summary\": \"After an encounter with U.F.O.s, a line worker feels undeniably drawn to an isolated area in the wilderness where something spectacular is about to happen.\",\r\n    \"genre\": \"Drama, Sci-Fi\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT actor in movie",
+			"request": {
+				"url": "http://localhost:11506/api/movies/79a26b88-046a-4b80-a94b-38cb5330a280/actors/124a6d94-5006-4e09-8582-0e07cdc5deaf",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Matthew II\",\r\n\t\"LastName\": \"Broderick\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH actor in movie",
+			"request": {
+				"url": "http://localhost:11506/api/movies/79a26b88-046a-4b80-a94b-38cb5330a280/actors/124a6d94-5006-4e09-8582-0e07cdc5deaf",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"replace\",\n      \"path\": \"/LastName\",\n      \"value\": \"Broderick - Updated\"\n    }\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET movie paginado",
+			"request": {
+				"url": {
+					"raw": "http://localhost:11506/api/movies/?pageNumber=1&pageSize=3",
+					"protocol": "http",
+					"auth": {},
+					"host": [
+						"localhost"
+					],
+					"port": "11506",
+					"path": [
+						"api",
+						"movies",
+						""
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pageSize",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
